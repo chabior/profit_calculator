@@ -10,6 +10,7 @@ use phpunit\framework\TestCase;
 /**
  * Class WinCalculator
  * @package Chabior\ProfitCalculator\Test\Calculator
+ * @author Paweł Chabierski <p.chabierski@gmail.com>
  */
 class WinCalculatorTest extends TestCase
 {
@@ -23,9 +24,6 @@ class WinCalculatorTest extends TestCase
         $this->calculator = new WinCalculator();
     }
 
-    /**
-     *
-     */
     public function testCalculate()
     {
         $this->assertEquals(

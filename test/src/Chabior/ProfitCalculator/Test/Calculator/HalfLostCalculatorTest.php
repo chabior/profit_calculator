@@ -1,6 +1,7 @@
 <?php
 
 namespace Chabior\ProfitCalculator\Test\Calculator;
+
 use Chabior\ProfitCalculator\Calculator\HalfLostCalculator;
 use Money\Currency;
 use Money\Money;
