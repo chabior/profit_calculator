@@ -1,8 +1,8 @@
 {
-  "name": "chabior-baytekin/profit_calculator",
+  "name": "chabior/profit_calculator",
   "description": "Profit calculator",
   "keywords": ["profit calculator, calculcator, betting"],
-  "homepage": "https://github.com/chabior-baytekin/profit_calculator",
+  "homepage": "https://github.com/chabior/profit_calculator",
   "type": "library",
   "license": "Apache 2.0",
   "authors": [
