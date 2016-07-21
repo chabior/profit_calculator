@@ -23,10 +23,10 @@ class TipStatusEnum
      * @var array
      */
     public static $allowed = array(
-        'lost' => self::LOST,
-        'won' => self::WON,
-        'half_lost' => self::HALF_LOST,
-        'half_won' => self::HALF_WON,
-        'voided' => self::VOIDED,
+        self::LOST => 'lost' ,
+        self::WON => 'won',
+        self::HALF_LOST => 'half_lost',
+        self::HALF_WON => 'half_won',
+        self::VOIDED => 'voided',
     );
 }

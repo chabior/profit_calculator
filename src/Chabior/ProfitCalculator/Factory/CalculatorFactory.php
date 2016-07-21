@@ -52,7 +52,7 @@ class CalculatorFactory
             case TipStatusEnum::VOIDED:
                 return new VoidCalculator();
             default:
-                throw CalculatorNotFoundException::get($status, TipStatusEnum::$allowed);
+                throw CalculatorNotFoundException::get($status);
         }
     }
 }
