@@ -3,7 +3,7 @@
 namespace Chabior\ProfitCalculator\Calculator;
 
 
-use Chabior\ProfitCalculator\Model\Calculable;
+use Chabior\ProfitCalculator\Model\Calculator;
 use Money\Money;
 
 /**
@@ -11,7 +11,7 @@ use Money\Money;
  * @package Chabior\ProfitCalculator\Calculator
  * @author Paweł Chabierski <p.chabierski@gmail.com>
  */
-class VoidCalculator implements Calculable
+class VoidCalculator implements Calculator
 {
 
     /**

@@ -9,7 +9,7 @@ use Money\Money;
  * @package Chabior\ProfitCalculator\Model
  * @author Paweł Chabierski <p.chabierski@gmail.com>
  */
-interface Calculable
+interface Calculator
 {
     /**
      * @param $odd

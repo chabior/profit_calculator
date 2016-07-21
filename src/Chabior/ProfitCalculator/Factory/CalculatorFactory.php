@@ -9,7 +9,7 @@ use Chabior\ProfitCalculator\Calculator\VoidCalculator;
 use Chabior\ProfitCalculator\Calculator\WinCalculator;
 use Chabior\ProfitCalculator\Enum\TipStatusEnum;
 use Chabior\ProfitCalculator\Exception\CalculatorNotFoundException;
-use Chabior\ProfitCalculator\Model\Calculable;
+use Chabior\ProfitCalculator\Model\Calculator;
 use Money\Currency;
 
 /**
@@ -35,7 +35,7 @@ class CalculatorFactory
 
     /**
      * @param $status
-     * @return Calculable
+     * @return Calculator
      * @throws CalculatorNotFoundException
      */
     public function createForStatus($status)
