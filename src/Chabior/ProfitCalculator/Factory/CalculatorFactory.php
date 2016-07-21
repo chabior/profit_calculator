@@ -8,6 +8,7 @@ use Chabior\ProfitCalculator\Calculator\LostCalculator;
 use Chabior\ProfitCalculator\Calculator\VoidCalculator;
 use Chabior\ProfitCalculator\Calculator\WinCalculator;
 use Chabior\ProfitCalculator\Enum\TipStatusEnum;
+use Chabior\ProfitCalculator\Exception\CalculatorNotFoundException;
 use Chabior\ProfitCalculator\Model\Calculable;
 use Money\Currency;
 
@@ -35,6 +36,7 @@ class CalculatorFactory
     /**
      * @param $status
      * @return Calculable
+     * @throws CalculatorNotFoundException
      */
     public function createForStatus($status)
     {
@@ -49,6 +51,8 @@ class CalculatorFactory
                 return new HalfWinCalculator();
             case TipStatusEnum::VOIDED:
                 return new VoidCalculator();
+            default:
+                throw CalculatorNotFoundException::get($status, TipStatusEnum::$allowed);
         }
     }
 }

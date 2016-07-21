@@ -18,4 +18,15 @@ class TipStatusEnum
     const HALF_WON = 3;
 
     const VOIDED = 4;
+
+    /**
+     * @var array
+     */
+    public static $allowed = array(
+        'lost' => self::LOST,
+        'won' => self::WON,
+        'half_lost' => self::HALF_LOST,
+        'half_won' => self::HALF_WON,
+        'voided' => self::VOIDED,
+    );
 }

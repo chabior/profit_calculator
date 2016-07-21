@@ -35,6 +35,14 @@ class CalculatorFactoryTest extends TestCase
     }
 
     /**
+     * @expectedException Chabior\ProfitCalculator\Exception\CalculatorNotFoundException
+     */
+    public function testNotExistedCalculator()
+    {
+        $this->factory->createForStatus(9999);
+    }
+
+    /**
      * @return array
      */
     public function statusFactoryProvider()
