@@ -2,7 +2,6 @@
 
 namespace Chabior\ProfitCalculator\Calculator;
 
-
 use Chabior\ProfitCalculator\Model\Calculator;
 use Money\Money;
 

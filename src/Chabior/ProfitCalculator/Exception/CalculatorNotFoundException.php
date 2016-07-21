@@ -1,6 +1,7 @@
 <?php
 
 namespace Chabior\ProfitCalculator\Exception;
+
 use Chabior\ProfitCalculator\Enum\TipStatusEnum;
 
 /**

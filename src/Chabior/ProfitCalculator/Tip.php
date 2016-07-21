@@ -1,6 +1,7 @@
 <?php
 
 namespace Chabior\ProfitCalculator;
+
 use Chabior\ProfitCalculator\Enum\TipStatusEnum;
 use Chabior\ProfitCalculator\Exception\InvalidOddException;
 use Chabior\ProfitCalculator\Exception\InvalidStakeException;
