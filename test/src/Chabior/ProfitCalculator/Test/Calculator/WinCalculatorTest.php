@@ -5,14 +5,13 @@ namespace Chabior\ProfitCalculator\Test\Calculator;
 use Chabior\ProfitCalculator\Calculator\WinCalculator;
 use Money\Currency;
 use Money\Money;
-use phpunit\framework\TestCase;
 
 /**
  * Class WinCalculator
  * @package Chabior\ProfitCalculator\Test\Calculator
  * @author Paweł Chabierski <p.chabierski@gmail.com>
  */
-class WinCalculatorTest extends TestCase
+class WinCalculatorTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @var WinCalculator

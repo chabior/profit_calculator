@@ -2,17 +2,15 @@
 
 namespace Chabior\ProfitCalculator\Test\Factory;
 
-use Chabior\ProfitCalculator\Calculator\VoidCalculator;
 use Chabior\ProfitCalculator\Enum\TipStatusEnum;
 use Chabior\ProfitCalculator\Factory\CalculatorFactory;
 use Money\Currency;
-use phpunit\framework\TestCase;
 
 /**
  * Class CalculatorFactoryTest
  * @author Paweł Chabierski <p.chabierski@gmail.com>
  */
-class CalculatorFactoryTest extends TestCase
+class CalculatorFactoryTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @var CalculatorFactory
