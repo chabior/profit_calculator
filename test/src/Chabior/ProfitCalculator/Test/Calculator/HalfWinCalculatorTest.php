@@ -5,14 +5,13 @@ namespace Chabior\ProfitCalculator\Test\Calculator;
 use Chabior\ProfitCalculator\Calculator\HalfWinCalculator;
 use Money\Currency;
 use Money\Money;
-use phpunit\framework\TestCase;
 
 /**
  * Class HalfWinCalculatorTest
  * @package Chabior\ProfitCalculator\Test\Calculator
  * @author Paweł Chabierski <p.chabierski@gmail.com>
  */
-class HalfWinCalculatorTest extends TestCase
+class HalfWinCalculatorTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @var HalfWinCalculator

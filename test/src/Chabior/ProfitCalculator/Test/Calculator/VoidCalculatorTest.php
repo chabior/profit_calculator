@@ -5,14 +5,13 @@ namespace Chabior\ProfitCalculator\Test\Calculator;
 use Chabior\ProfitCalculator\Calculator\VoidCalculator;
 use Money\Currency;
 use Money\Money;
-use phpunit\framework\TestCase;
 
 /**
  * Class VoidCalculatorTest
  * @package Chabior\ProfitCalculator\Test\Calculator
  * @author Paweł Chabierski <p.chabierski@gmail.com>
  */
-class VoidCalculatorTest extends TestCase
+class VoidCalculatorTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @var VoidCalculator

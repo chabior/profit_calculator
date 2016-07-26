@@ -5,14 +5,13 @@ namespace Chabior\ProfitCalculator\Test\Calculator;
 use Chabior\ProfitCalculator\Calculator\LostCalculator;
 use Money\Currency;
 use Money\Money;
-use phpunit\framework\TestCase;
 
 /**
  * Class LostCalculatorTest
  * @package Chabior\ProfitCalculator\Test\Calculator
  * @author Paweł Chabierski <p.chabierski@gmail.com>
  */
-class LostCalculatorTest extends TestCase
+class LostCalculatorTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @var LostCalculator

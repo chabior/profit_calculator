@@ -8,14 +8,13 @@ use Chabior\ProfitCalculator\ProfitCalculator;
 use Chabior\ProfitCalculator\Tip;
 use Money\Currency;
 use Money\Money;
-use phpunit\framework\TestCase;
 
 /**
  * Class TipTest
  * @package Chabior\ProfitCalculator\Test
  * @author Paweł Chabierski <p.chabierski@gmail.com>
  */
-class TipTest extends TestCase
+class TipTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @var CalculatorFactory
@@ -69,7 +68,7 @@ class TipTest extends TestCase
      */
     public function testEmptyOdd()
     {
-        new Tip(new Money(5, new Currency('EUR')), -1.2, TipStatusEnum::WON);
+        new Tip(new Money(5, new Currency('EUR')), 0, TipStatusEnum::WON);
     }
 
     /**
@@ -133,6 +132,22 @@ class TipTest extends TestCase
                     TipStatusEnum::WON
                 ),
                 new Money(160500, new Currency('EUR')),
+            ),
+            6 => array (
+                new Tip(
+                    new Money(50000, new Currency('EUR')),
+                    1,
+                    TipStatusEnum::WON
+                ),
+                new Money(0, new Currency('EUR')),
+            ),
+            7 => array (
+                new Tip(
+                    new Money(1, new Currency('EUR')),
+                    2,
+                    TipStatusEnum::WON
+                ),
+                new Money(1, new Currency('EUR')),
             ),
         );
     }
